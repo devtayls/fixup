@@ -10,6 +10,7 @@ import (
 func main() {
 	// Get commits from current branch
 	// some comment
+	// more comments
 	commits, err := getCommits()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error fetching commits: %v\n", err)
