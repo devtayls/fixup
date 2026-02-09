@@ -388,3 +388,29 @@ debug 2026/02/08 21:16:35 Update called with message type: tea.KeyMsg
 debug 2026/02/08 21:16:35 Key pressed: q
 debug 2026/02/08 21:16:35 View() called - cursor at: 1
 debug 2026/02/08 21:16:35 View() called - cursor at: 1
+debug 2026/02/08 22:33:19 View() called - cursor at: 0
+debug 2026/02/08 22:33:19 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:33:19 Window resized: 84x49
+debug 2026/02/08 22:33:19 View() called - cursor at: 0
+debug 2026/02/08 22:33:20 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:33:20 Key pressed: down
+debug 2026/02/08 22:33:20 View() called - cursor at: 0
+debug 2026/02/08 22:33:21 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:33:21 Key pressed: down
+debug 2026/02/08 22:33:21 View() called - cursor at: 0
+debug 2026/02/08 22:33:22 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:33:22 Key pressed: down
+debug 2026/02/08 22:33:22 View() called - cursor at: 0
+debug 2026/02/08 22:33:22 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:33:22 Key pressed: up
+debug 2026/02/08 22:33:22 View() called - cursor at: 0
+debug 2026/02/08 22:33:22 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:33:22 Key pressed: up
+debug 2026/02/08 22:33:22 View() called - cursor at: 0
+debug 2026/02/08 22:33:24 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:33:24 Key pressed: :
+debug 2026/02/08 22:33:24 View() called - cursor at: 0
+debug 2026/02/08 22:33:25 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:33:25 Key pressed: q
+debug 2026/02/08 22:33:25 View() called - cursor at: 0
+debug 2026/02/08 22:33:25 View() called - cursor at: 0
