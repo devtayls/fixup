@@ -14,6 +14,10 @@ type Commit struct {
 	Date    string
 }
 
+func (c Commit) FilterValue() string {
+	return c.Subject
+}
+
 // getCommits retrieves all non-fixup commits on the current branch since main
 func getCommits() ([]Commit, error) {
 	// Find the merge base with main
