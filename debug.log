@@ -414,3 +414,366 @@ debug 2026/02/08 22:33:25 Update called with message type: tea.KeyMsg
 debug 2026/02/08 22:33:25 Key pressed: q
 debug 2026/02/08 22:33:25 View() called - cursor at: 0
 debug 2026/02/08 22:33:25 View() called - cursor at: 0
+debug 2026/02/08 22:34:01 View() called - cursor at: 0
+debug 2026/02/08 22:34:01 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:34:01 Window resized: 84x49
+debug 2026/02/08 22:34:01 View() called - cursor at: 0
+debug 2026/02/08 22:34:02 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:34:02 Key pressed: down
+debug 2026/02/08 22:34:02 View() called - cursor at: 1
+debug 2026/02/08 22:34:03 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:34:03 Key pressed: up
+debug 2026/02/08 22:34:03 View() called - cursor at: 0
+debug 2026/02/08 22:34:04 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:34:04 Key pressed: a
+debug 2026/02/08 22:34:04 View() called - cursor at: 0
+debug 2026/02/08 22:34:04 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:34:04 Key pressed: a
+debug 2026/02/08 22:34:04 View() called - cursor at: 0
+debug 2026/02/08 22:34:05 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:34:05 Key pressed: q
+debug 2026/02/08 22:34:05 View() called - cursor at: 0
+debug 2026/02/08 22:34:05 View() called - cursor at: 0
+debug 2026/02/08 22:48:06 View() called
+debug 2026/02/08 22:48:06 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:48:06 Window resized: 84x49
+debug 2026/02/08 22:48:06 View() called
+debug 2026/02/08 22:48:07 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:48:07 Key pressed: down
+debug 2026/02/08 22:48:07 View() called
+debug 2026/02/08 22:48:07 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:48:07 Key pressed: up
+debug 2026/02/08 22:48:07 View() called
+debug 2026/02/08 22:48:08 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:48:08 Key pressed: q
+debug 2026/02/08 22:48:08 View() called
+debug 2026/02/08 22:48:08 View() called
+debug 2026/02/08 22:50:39 View() called
+debug 2026/02/08 22:50:39 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:39 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:39 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:50:39 Window resized: 84x49
+debug 2026/02/08 22:50:39 View() called
+debug 2026/02/08 22:50:39 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:39 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:40 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:40 Key pressed: down
+debug 2026/02/08 22:50:40 View() called
+debug 2026/02/08 22:50:40 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:40 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:40 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:40 Key pressed: down
+debug 2026/02/08 22:50:40 View() called
+debug 2026/02/08 22:50:40 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:40 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:40 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:40 Key pressed: down
+debug 2026/02/08 22:50:40 View() called
+debug 2026/02/08 22:50:40 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:40 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:41 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:41 Key pressed: down
+debug 2026/02/08 22:50:41 View() called
+debug 2026/02/08 22:50:41 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:41 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:41 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:41 Key pressed: down
+debug 2026/02/08 22:50:41 View() called
+debug 2026/02/08 22:50:41 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:41 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:41 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:41 Key pressed: down
+debug 2026/02/08 22:50:41 View() called
+debug 2026/02/08 22:50:41 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:41 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:41 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:41 Key pressed: up
+debug 2026/02/08 22:50:41 View() called
+debug 2026/02/08 22:50:41 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:41 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:42 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:42 Key pressed: up
+debug 2026/02/08 22:50:42 View() called
+debug 2026/02/08 22:50:42 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:42 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:42 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:42 Key pressed: down
+debug 2026/02/08 22:50:42 View() called
+debug 2026/02/08 22:50:42 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:42 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:42 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:42 Key pressed: down
+debug 2026/02/08 22:50:42 View() called
+debug 2026/02/08 22:50:42 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:42 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:42 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:42 Key pressed: down
+debug 2026/02/08 22:50:42 View() called
+debug 2026/02/08 22:50:42 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:42 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:43 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:43 Key pressed: up
+debug 2026/02/08 22:50:43 View() called
+debug 2026/02/08 22:50:43 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:43 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:43 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:43 Key pressed: up
+debug 2026/02/08 22:50:43 View() called
+debug 2026/02/08 22:50:43 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:43 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:43 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:43 Key pressed: q
+debug 2026/02/08 22:50:43 View() called
+debug 2026/02/08 22:50:43 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:43 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:43 View() called
+debug 2026/02/08 22:50:43 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:43 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:58 View() called
+debug 2026/02/08 22:50:58 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:58 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:58 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:50:58 Window resized: 84x49
+debug 2026/02/08 22:50:58 View() called
+debug 2026/02/08 22:50:58 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:58 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:59 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:59 Key pressed: j
+debug 2026/02/08 22:50:59 View() called
+debug 2026/02/08 22:50:59 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:59 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:59 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:59 Key pressed: k
+debug 2026/02/08 22:50:59 View() called
+debug 2026/02/08 22:50:59 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:59 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:59 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:59 Key pressed: j
+debug 2026/02/08 22:50:59 View() called
+debug 2026/02/08 22:50:59 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:59 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:59 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:59 Key pressed: k
+debug 2026/02/08 22:50:59 View() called
+debug 2026/02/08 22:50:59 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:59 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:51:00 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:51:00 Key pressed: j
+debug 2026/02/08 22:51:00 View() called
+debug 2026/02/08 22:51:00 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:51:00 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:51:01 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:51:01 Key pressed: q
+debug 2026/02/08 22:51:01 View() called
+debug 2026/02/08 22:51:01 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:51:01 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:51:01 View() called
+debug 2026/02/08 22:51:01 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:51:01 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:53:11 View() called
+debug 2026/02/08 22:53:11 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:11 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:11 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:53:11 Window resized: 84x49
+debug 2026/02/08 22:53:11 View() called
+debug 2026/02/08 22:53:11 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:11 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:14 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:14 Key pressed: a
+debug 2026/02/08 22:53:14 View() called
+debug 2026/02/08 22:53:14 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:14 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:16 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:16 Key pressed: y
+debug 2026/02/08 22:53:16 View() called
+debug 2026/02/08 22:53:16 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:16 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:16 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:16 Key pressed: e
+debug 2026/02/08 22:53:16 View() called
+debug 2026/02/08 22:53:16 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:16 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:16 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:16 Key pressed: t
+debug 2026/02/08 22:53:16 View() called
+debug 2026/02/08 22:53:16 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:16 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:17 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:17 Key pressed: esc
+debug 2026/02/08 22:53:17 View() called
+debug 2026/02/08 22:53:17 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:17 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:17 View() called
+debug 2026/02/08 22:53:17 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:17 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:45 View() called
+debug 2026/02/08 22:53:45 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:45 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:45 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:53:45 Window resized: 84x49
+debug 2026/02/08 22:53:45 View() called
+debug 2026/02/08 22:53:45 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:45 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:47 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:47 Key pressed: /
+debug 2026/02/08 22:53:47 View() called
+debug 2026/02/08 22:53:47 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:47 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:47 Update called with message type: cursor.initialBlinkMsg
+debug 2026/02/08 22:53:47 View() called
+debug 2026/02/08 22:53:47 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:47 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:48 Update called with message type: cursor.BlinkMsg
+debug 2026/02/08 22:53:48 View() called
+debug 2026/02/08 22:53:48 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:48 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:48 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:48 Key pressed: a
+debug 2026/02/08 22:53:48 View() called
+debug 2026/02/08 22:53:48 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:48 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:48 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:48 View() called
+debug 2026/02/08 22:53:48 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:48 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:48 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:48 View() called
+debug 2026/02/08 22:53:48 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:48 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:48 Key pressed: n
+debug 2026/02/08 22:53:48 View() called
+debug 2026/02/08 22:53:48 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:48 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:48 View() called
+debug 2026/02/08 22:53:48 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:48 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:48 View() called
+debug 2026/02/08 22:53:48 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:49 Key pressed: t
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:49 Key pressed: backspace
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:49 Key pressed: o
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:49 Key pressed: t
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:49 Key pressed: h
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:49 Key pressed: e
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:50 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:50 Key pressed: r
+debug 2026/02/08 22:53:50 View() called
+debug 2026/02/08 22:53:50 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:50 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:50 View() called
+debug 2026/02/08 22:53:50 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:50 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:50 View() called
+debug 2026/02/08 22:53:50 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:50 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:50 Key pressed: esc
+debug 2026/02/08 22:53:50 View() called
+debug 2026/02/08 22:53:50 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:50 View() called
+debug 2026/02/08 22:53:50 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:52 View() called
+debug 2026/02/08 22:53:52 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:52 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:52 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:53:52 Window resized: 84x49
+debug 2026/02/08 22:53:52 View() called
+debug 2026/02/08 22:53:52 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:52 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:55 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:55 Key pressed: ?
+debug 2026/02/08 22:53:55 View() called
+debug 2026/02/08 22:53:55 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:55 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:57 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:57 Key pressed: q
+debug 2026/02/08 22:53:57 View() called
+debug 2026/02/08 22:53:57 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:57 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:57 View() called
+debug 2026/02/08 22:53:57 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:57 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:54:03 View() called
+debug 2026/02/08 22:54:03 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:54:03 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:54:03 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:54:03 Window resized: 84x49
+debug 2026/02/08 22:54:03 View() called
+debug 2026/02/08 22:54:03 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:54:03 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:54:04 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:54:04 Key pressed: down
+debug 2026/02/08 22:54:04 View() called
+debug 2026/02/08 22:54:04 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:54:04 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:54:04 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:54:04 Key pressed: up
+debug 2026/02/08 22:54:04 View() called
+debug 2026/02/08 22:54:04 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:54:04 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:54:05 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:54:05 Key pressed: down
+debug 2026/02/08 22:54:05 View() called
+debug 2026/02/08 22:54:05 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:54:05 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:54:18 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:54:18 Key pressed: q
+debug 2026/02/08 22:54:18 View() called
+debug 2026/02/08 22:54:18 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:54:18 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:54:18 View() called
+debug 2026/02/08 22:54:18 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:54:18 Delegate rendering commit 1: test(1): some commit (selected: true)
