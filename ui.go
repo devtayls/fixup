@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"strings"
 
 	"github.com/charmbracelet/bubbles/key"
@@ -73,6 +74,8 @@ type model struct {
 	cursor   int
 	selected bool
 	err      error
+	width    int
+	height   int
 }
 
 // initialModel creates the initial model with commits
@@ -90,8 +93,16 @@ func (m model) Init() tea.Cmd {
 
 // Update handles messages and updates the model
 func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
+	log.Printf("Update called with message type: %T", msg)
+
 	switch msg := msg.(type) {
+	case tea.WindowSizeMsg:
+		m.width = msg.Width
+		m.height = msg.Height
+		log.Printf("Window resized: %dx%d", m.width, m.height)
+
 	case tea.KeyMsg:
+		log.Printf("Key pressed: %s", msg.String())
 		switch {
 		case key.Matches(msg, keys.Quit):
 			return m, tea.Quit
@@ -121,8 +132,53 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	return m, nil
 }
 
+func wrapText(text string, maxWidth int) []string {
+	// Guard against invalid widths
+	if maxWidth <= 0 {
+		return []string{text}
+	}
+
+	// If commit message is less than max width, don't change anything:
+	if len(text) <= maxWidth {
+		return []string{text}
+	}
+
+	var lines []string
+	for len(text) > maxWidth {
+		// greedily grab words till max width
+		chunk := text[:maxWidth]
+		wordBoundary := strings.LastIndex(chunk, " ")
+
+		// Default to maxwidth (charbased) if wordBoundary found, use that instead.
+		breakPoint := maxWidth
+		if wordBoundary != -1 {
+			breakPoint = wordBoundary
+		}
+
+		singleLine := text[:breakPoint]
+
+		// syntax to grab from breakPoint to the end
+		remaining := text[breakPoint:]
+		remaining = strings.TrimSpace(remaining)
+
+		// Append the lines to our array
+		lines = append(lines, singleLine)
+
+		// re-assign text for next loop
+		text = remaining
+	}
+
+	if len(text) > 0 {
+		lines = append(lines, text)
+	}
+
+	return lines
+}
+
 // View renders the UI
 func (m model) View() string {
+	log.Printf("View() called - cursor at: %d", m.cursor)
+
 	if m.err != nil {
 		return errorStyle.Render(fmt.Sprintf("Error: %v\n", m.err))
 	}
@@ -149,11 +205,29 @@ func (m model) View() string {
 			prefix = "  "
 		}
 
+		// space for subject minus prefix
+		preSubjectContent := 10
+		rightMargin := m.width / 20
+		availableSubjectSpace := m.width - (rightMargin + preSubjectContent)
+
+		wrappedSubject := wrapText(commit.Subject, availableSubjectSpace)
+
 		// Format: > hash (7 chars) subject (author, date)
 		shortHash := commit.Hash[:7]
-		line := fmt.Sprintf("%s%s %s", prefix, shortHash, commit.Subject)
+		line := fmt.Sprintf("%s%s %s", prefix, shortHash, wrappedSubject[0])
 		b.WriteString(style.Render(line))
 		b.WriteString("\n")
+
+		if len(wrappedSubject) > 1 {
+			for i := 1; i < len(wrappedSubject); i++ {
+				indentation := "          "
+				line := fmt.Sprintf("%s%s", indentation, wrappedSubject[i])
+				b.WriteString(style.Render(line))
+				b.WriteString("\n")
+
+			}
+
+		}
 
 		// Show author and date for selected commit
 		if i == m.cursor {
