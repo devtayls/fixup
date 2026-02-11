@@ -12,6 +12,14 @@ import (
 	"github.com/charmbracelet/lipgloss"
 )
 
+const (
+	hashLength   = 7
+	prefixWidth  = 2 // "> " or "  "
+	hashSpacing  = 1 // space after hash
+	leftMargin   = prefixWidth + hashLength + hashSpacing
+	indentSpaces = "          "
+)
+
 // Styles
 var (
 	titleStyle = lipgloss.NewStyle().
@@ -30,10 +38,6 @@ var (
 			Foreground(lipgloss.Color("241")).
 			Italic(true)
 
-	helpStyle = lipgloss.NewStyle().
-			Foreground(lipgloss.Color("241")).
-			Padding(1, 0, 0, 2)
-
 	successStyle = lipgloss.NewStyle().
 			Foreground(lipgloss.Color("42")).
 			Bold(true)
@@ -45,21 +49,11 @@ var (
 
 // keyMap defines the key bindings
 type keyMap struct {
-	Up     key.Binding
-	Down   key.Binding
 	Select key.Binding
 	Quit   key.Binding
 }
 
 var keys = keyMap{
-	Up: key.NewBinding(
-		key.WithKeys("up", "k"),
-		key.WithHelp("↑/k", "move up"),
-	),
-	Down: key.NewBinding(
-		key.WithKeys("down", "j"),
-		key.WithHelp("↓/j", "move down"),
-	),
 	Select: key.NewBinding(
 		key.WithKeys("enter"),
 		key.WithHelp("enter", "create fixup"),
@@ -85,7 +79,7 @@ func initialModel(commits []Commit) model {
 	}
 
 	// Create the delegate
-	delegate := commitDelegate{width: 120} // Default width, will be updated
+	delegate := commitDelegate{}
 
 	// Create the list
 	l := list.New(items, delegate, 120, 20) // width, height - will be updated by WindowSizeMsg
@@ -188,9 +182,7 @@ func wrapText(text string, maxWidth int) []string {
 	return lines
 }
 
-type commitDelegate struct {
-	width int // terminal width for wrapping
-}
+type commitDelegate struct{}
 
 func (d commitDelegate) Height() int {
 	return 1 // base height
@@ -225,23 +217,28 @@ func (d commitDelegate) Render(w io.Writer, m list.Model, index int, listItem li
 	}
 
 	// space for subject minus prefix
-	preSubjectContent := 10
 	rightMargin := m.Width() / 20
-	availableSubjectSpace := m.Width() - (rightMargin + preSubjectContent)
+	availableSubjectSpace := m.Width() - (rightMargin + leftMargin)
 
 	wrappedSubject := wrapText(commit.Subject, availableSubjectSpace)
 
 	// Format: > hash (7 chars) subject (author, date)
-	shortHash := commit.Hash[:7]
+	var shortHash string
+	if len(commit.Hash) < hashLength {
+		shortHash = commit.Hash
+	} else {
+		shortHash = commit.Hash[:hashLength]
+	}
+
 	line := fmt.Sprintf("%s%s %s", prefix, shortHash, wrappedSubject[0])
 	fmt.Fprintln(w, style.Render(line))
 
 	if len(wrappedSubject) > 1 {
 		for i := 1; i < len(wrappedSubject); i++ {
-			indentation := "          "
+			indentation := indentSpaces
+
 			line := fmt.Sprintf("%s%s", indentation, wrappedSubject[i])
 			fmt.Fprintln(w, style.Render(line))
-			fmt.Fprintln(w, "\n")
 		}
 	}
 

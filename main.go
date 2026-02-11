@@ -11,8 +11,6 @@ import (
 
 func main() {
 	// Get commits from current branch
-	// some comment
-	// more comments
 	// Enable debug by passing "DEBUG" statement
 	if len(os.Getenv("DEBUG")) > 0 {
 		f, err := tea.LogToFile("debug.log", "debug")
