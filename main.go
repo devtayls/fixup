@@ -11,8 +11,6 @@ import (
 
 func main() {
 	// Get commits from current branch
-	// some comment
-	// more comments
 	// Enable debug by passing "DEBUG" statement
 	if len(os.Getenv("DEBUG")) > 0 {
 		f, err := tea.LogToFile("debug.log", "debug")
@@ -41,8 +39,24 @@ func main() {
 
 	// Run the program
 	p := tea.NewProgram(m, tea.WithAltScreen())
-	if _, err := p.Run(); err != nil {
+	finalModel, err := p.Run()
+
+	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error running program: %v\n", err)
 		os.Exit(1)
+	}
+
+	// Print output after TUI exits
+	m, ok := finalModel.(model)
+	if ok && m.selected {
+		selectedItem := m.list.SelectedItem()
+		if selectedItem != nil {
+			commit := selectedItem.(Commit)
+			fmt.Printf("\n✓ Created fixup commit for %s (%s)\n\n",
+				commit.Hash[:hashLength],
+				commit.Subject)
+			fmt.Println("Run 'git log --oneline' to see your commits.")
+			fmt.Println("Run 'git rebase -i --autosquash <base>' to squash fixups.")
+		}
 	}
 }

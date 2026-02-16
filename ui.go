@@ -2,12 +2,22 @@ package main
 
 import (
 	"fmt"
+	"io"
 	"log"
 	"strings"
 
 	"github.com/charmbracelet/bubbles/key"
+	"github.com/charmbracelet/bubbles/list"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
+)
+
+const (
+	hashLength   = 7
+	prefixWidth  = 2 // "> " or "  "
+	hashSpacing  = 1 // space after hash
+	leftMargin   = prefixWidth + hashLength + hashSpacing
+	indentSpaces = "          "
 )
 
 // Styles
@@ -28,10 +38,6 @@ var (
 			Foreground(lipgloss.Color("241")).
 			Italic(true)
 
-	helpStyle = lipgloss.NewStyle().
-			Foreground(lipgloss.Color("241")).
-			Padding(1, 0, 0, 2)
-
 	successStyle = lipgloss.NewStyle().
 			Foreground(lipgloss.Color("42")).
 			Bold(true)
@@ -43,21 +49,11 @@ var (
 
 // keyMap defines the key bindings
 type keyMap struct {
-	Up     key.Binding
-	Down   key.Binding
 	Select key.Binding
 	Quit   key.Binding
 }
 
 var keys = keyMap{
-	Up: key.NewBinding(
-		key.WithKeys("up", "k"),
-		key.WithHelp("↑/k", "move up"),
-	),
-	Down: key.NewBinding(
-		key.WithKeys("down", "j"),
-		key.WithHelp("↓/j", "move down"),
-	),
 	Select: key.NewBinding(
 		key.WithKeys("enter"),
 		key.WithHelp("enter", "create fixup"),
@@ -68,21 +64,32 @@ var keys = keyMap{
 	),
 }
 
-// model represents the state of the TUI
 type model struct {
-	commits  []Commit
-	cursor   int
+	list     list.Model
 	selected bool
 	err      error
-	width    int
-	height   int
 }
 
 // initialModel creates the initial model with commits
 func initialModel(commits []Commit) model {
+	// Convert []Commit to []list.Item
+	items := make([]list.Item, len(commits))
+	for i, commit := range commits {
+		items[i] = commit
+	}
+
+	// Create the delegate
+	delegate := commitDelegate{}
+
+	// Create the list
+	l := list.New(items, delegate, 120, 20) // width, height - will be updated by WindowSizeMsg
+	l.Title = "Select a commit to fixup"
+	l.SetShowStatusBar(false)
+	l.SetFilteringEnabled(true)
+	l.Styles.Title = titleStyle
+
 	return model{
-		commits: commits,
-		cursor:  0,
+		list: l,
 	}
 }
 
@@ -96,40 +103,40 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	log.Printf("Update called with message type: %T", msg)
 
 	switch msg := msg.(type) {
+	// Update window width
 	case tea.WindowSizeMsg:
-		m.width = msg.Width
-		m.height = msg.Height
-		log.Printf("Window resized: %dx%d", m.width, m.height)
+		m.list.SetSize(msg.Width, msg.Height-4) // for margins
+		log.Printf("Window resized: %dx%d", msg.Width, msg.Height)
 
+	// Update key press
 	case tea.KeyMsg:
 		log.Printf("Key pressed: %s", msg.String())
-		switch {
-		case key.Matches(msg, keys.Quit):
-			return m, tea.Quit
 
-		case key.Matches(msg, keys.Up):
-			if m.cursor > 0 {
-				m.cursor--
-			}
-
-		case key.Matches(msg, keys.Down):
-			if m.cursor < len(m.commits)-1 {
-				m.cursor++
-			}
-
-		case key.Matches(msg, keys.Select):
-			// Create fixup commit for selected commit
-			commit := m.commits[m.cursor]
-			if err := createFixupCommit(commit.Hash); err != nil {
-				m.err = err
+		// Handle Enter specially (create fixup commit)
+		if key.Matches(msg, keys.Select) {
+			// Get selected item
+			selectedItem := m.list.SelectedItem()
+			if selectedItem != nil {
+				commit := selectedItem.(Commit)
+				if err := createFixupCommit(commit.Hash); err != nil {
+					m.err = err
+					return m, tea.Quit
+				}
+				m.selected = true
 				return m, tea.Quit
 			}
-			m.selected = true
+		}
+
+		// Handle Quit
+		if key.Matches(msg, keys.Quit) {
 			return m, tea.Quit
 		}
-	}
 
-	return m, nil
+	}
+	// Let the list handle all other messages (navigation, etc.)
+	var cmd tea.Cmd
+	m.list, cmd = m.list.Update(msg)
+	return m, cmd
 }
 
 func wrapText(text string, maxWidth int) []string {
@@ -175,70 +182,89 @@ func wrapText(text string, maxWidth int) []string {
 	return lines
 }
 
+type commitDelegate struct{}
+
+func (d commitDelegate) Height() int {
+	return 1 // base height
+}
+
+func (d commitDelegate) Spacing() int {
+	return 0
+}
+
+func (d commitDelegate) Update(msg tea.Msg, m *list.Model) tea.Cmd {
+	return nil
+}
+
+func (d commitDelegate) Render(w io.Writer, m list.Model, index int, listItem list.Item) {
+	commit, ok := listItem.(Commit)
+	if !ok {
+		return
+	}
+
+	isSelected := index == m.Index()
+	log.Printf("Delegate rendering commit %d: %s (selected: %v)", index, commit.Subject, isSelected)
+
+	// Choose style and prefix based on selection
+	var style lipgloss.Style
+	var prefix string
+	if isSelected {
+		style = selectedStyle
+		prefix = "> "
+	} else {
+		style = normalStyle
+		prefix = "  "
+	}
+
+	// space for subject minus prefix
+	rightMargin := m.Width() / 20
+	availableSubjectSpace := m.Width() - (rightMargin + leftMargin)
+
+	wrappedSubject := wrapText(commit.Subject, availableSubjectSpace)
+
+	// Format: > hash (7 chars) subject (author, date)
+	var shortHash string
+	if len(commit.Hash) < hashLength {
+		shortHash = commit.Hash
+	} else {
+		shortHash = commit.Hash[:hashLength]
+	}
+
+	line := fmt.Sprintf("%s%s %s", prefix, shortHash, wrappedSubject[0])
+	fmt.Fprintln(w, style.Render(line))
+
+	if len(wrappedSubject) > 1 {
+		for i := 1; i < len(wrappedSubject); i++ {
+			indentation := indentSpaces
+
+			line := fmt.Sprintf("%s%s", indentation, wrappedSubject[i])
+			fmt.Fprintln(w, style.Render(line))
+		}
+	}
+
+	if isSelected {
+		info := fmt.Sprintf("     %s, %s", commit.Author, commit.Date)
+		fmt.Fprintln(w, infoStyle.Render(info))
+	}
+
+}
+
 // View renders the UI
 func (m model) View() string {
-	log.Printf("View() called - cursor at: %d", m.cursor)
+	log.Printf("View() called")
 
 	if m.err != nil {
 		return errorStyle.Render(fmt.Sprintf("Error: %v\n", m.err))
 	}
 
 	if m.selected {
-		commit := m.commits[m.cursor]
-		return successStyle.Render(fmt.Sprintf("✓ Created fixup commit for: %s\n", commit.Subject))
-	}
-
-	var b strings.Builder
-
-	// Title
-	b.WriteString(titleStyle.Render("Select a commit to fixup"))
-	b.WriteString("\n\n")
-
-	// Commit list
-	for i, commit := range m.commits {
-		var prefix string
-		style := normalStyle
-		if i == m.cursor {
-			style = selectedStyle
-			prefix = "> "
-		} else {
-			prefix = "  "
-		}
-
-		// space for subject minus prefix
-		preSubjectContent := 10
-		rightMargin := m.width / 20
-		availableSubjectSpace := m.width - (rightMargin + preSubjectContent)
-
-		wrappedSubject := wrapText(commit.Subject, availableSubjectSpace)
-
-		// Format: > hash (7 chars) subject (author, date)
-		shortHash := commit.Hash[:7]
-		line := fmt.Sprintf("%s%s %s", prefix, shortHash, wrappedSubject[0])
-		b.WriteString(style.Render(line))
-		b.WriteString("\n")
-
-		if len(wrappedSubject) > 1 {
-			for i := 1; i < len(wrappedSubject); i++ {
-				indentation := "          "
-				line := fmt.Sprintf("%s%s", indentation, wrappedSubject[i])
-				b.WriteString(style.Render(line))
-				b.WriteString("\n")
-
-			}
-
-		}
-
-		// Show author and date for selected commit
-		if i == m.cursor {
-			info := fmt.Sprintf("    %s, %s", commit.Author, commit.Date)
-			b.WriteString(infoStyle.Render(info))
-			b.WriteString("\n")
+		selectedItem := m.list.SelectedItem()
+		if selectedItem != nil {
+			commit := selectedItem.(Commit)
+			return successStyle.Render(fmt.Sprintf("✓ Created fixup commit for: %s\n", commit.Subject))
 		}
 	}
 
-	// Help text
-	b.WriteString(helpStyle.Render("↑/↓ or j/k: navigate • enter: create fixup • q: quit"))
-
-	return b.String()
+	// Let the list render itself!
+	return m.list.View()
 }

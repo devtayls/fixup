@@ -1,0 +1,779 @@
+debug 2026/02/07 17:46:20 View() called - cursor at: 0
+debug 2026/02/07 17:46:20 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:46:20 View() called - cursor at: 0
+debug 2026/02/07 17:46:21 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:46:21 Key pressed: down
+debug 2026/02/07 17:46:21 View() called - cursor at: 1
+debug 2026/02/07 17:46:21 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:46:21 Key pressed: up
+debug 2026/02/07 17:46:21 View() called - cursor at: 0
+debug 2026/02/07 17:46:22 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:46:22 Key pressed: down
+debug 2026/02/07 17:46:22 View() called - cursor at: 1
+debug 2026/02/07 17:46:22 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:46:22 Key pressed: up
+debug 2026/02/07 17:46:22 View() called - cursor at: 0
+debug 2026/02/07 17:46:22 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:46:22 Key pressed: down
+debug 2026/02/07 17:46:22 View() called - cursor at: 1
+debug 2026/02/07 17:46:26 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:46:26 Key pressed: up
+debug 2026/02/07 17:46:26 View() called - cursor at: 0
+debug 2026/02/07 17:46:29 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:46:29 Key pressed: down
+debug 2026/02/07 17:46:29 View() called - cursor at: 1
+debug 2026/02/07 17:49:58 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:49:58 Key pressed: q
+debug 2026/02/07 17:49:58 View() called - cursor at: 1
+debug 2026/02/07 17:49:58 View() called - cursor at: 1
+debug 2026/02/07 17:50:07 View() called - cursor at: 0
+debug 2026/02/07 17:50:07 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:50:07 View() called - cursor at: 0
+debug 2026/02/07 17:50:09 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:50:09 Key pressed: down
+debug 2026/02/07 17:50:09 View() called - cursor at: 1
+debug 2026/02/07 17:50:10 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:50:10 Key pressed: up
+debug 2026/02/07 17:50:10 View() called - cursor at: 0
+debug 2026/02/07 17:50:10 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:50:10 Key pressed: down
+debug 2026/02/07 17:50:10 View() called - cursor at: 1
+debug 2026/02/07 17:50:11 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:50:11 Key pressed: up
+debug 2026/02/07 17:50:11 View() called - cursor at: 0
+debug 2026/02/07 17:50:11 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:50:11 Key pressed: down
+debug 2026/02/07 17:50:11 View() called - cursor at: 1
+debug 2026/02/07 17:50:12 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:50:12 Key pressed: up
+debug 2026/02/07 17:50:12 View() called - cursor at: 0
+debug 2026/02/07 17:50:12 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:50:12 Key pressed: down
+debug 2026/02/07 17:50:12 View() called - cursor at: 1
+debug 2026/02/07 17:50:13 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:50:13 Key pressed: up
+debug 2026/02/07 17:50:13 View() called - cursor at: 0
+debug 2026/02/07 17:50:16 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:50:16 Key pressed: down
+debug 2026/02/07 17:50:16 View() called - cursor at: 1
+debug 2026/02/07 17:50:17 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:50:17 Key pressed: up
+debug 2026/02/07 17:50:17 View() called - cursor at: 0
+debug 2026/02/07 17:50:17 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:50:17 Key pressed: down
+debug 2026/02/07 17:50:17 View() called - cursor at: 1
+debug 2026/02/07 17:56:31 Update called with message type: tea.KeyMsg
+debug 2026/02/07 17:56:31 Key pressed: q
+debug 2026/02/07 17:56:31 View() called - cursor at: 1
+debug 2026/02/07 17:56:31 View() called - cursor at: 1
+debug 2026/02/07 17:56:53 View() called - cursor at: 0
+debug 2026/02/07 17:56:53 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:56:53 Window resized: 124x49
+debug 2026/02/07 17:56:53 View() called - cursor at: 0
+debug 2026/02/07 17:56:57 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:56:57 Window resized: 123x49
+debug 2026/02/07 17:56:57 View() called - cursor at: 0
+debug 2026/02/07 17:56:58 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:56:58 Window resized: 122x49
+debug 2026/02/07 17:56:58 View() called - cursor at: 0
+debug 2026/02/07 17:56:58 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:56:58 Window resized: 121x49
+debug 2026/02/07 17:56:58 View() called - cursor at: 0
+debug 2026/02/07 17:56:58 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:56:58 Window resized: 120x49
+debug 2026/02/07 17:56:58 View() called - cursor at: 0
+debug 2026/02/07 17:56:58 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:56:58 Window resized: 118x49
+debug 2026/02/07 17:56:58 View() called - cursor at: 0
+debug 2026/02/07 17:56:59 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:56:59 Window resized: 116x49
+debug 2026/02/07 17:56:59 View() called - cursor at: 0
+debug 2026/02/07 17:56:59 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:56:59 Window resized: 113x49
+debug 2026/02/07 17:56:59 View() called - cursor at: 0
+debug 2026/02/07 17:56:59 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:56:59 Window resized: 110x49
+debug 2026/02/07 17:56:59 View() called - cursor at: 0
+debug 2026/02/07 17:56:59 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:56:59 Window resized: 107x49
+debug 2026/02/07 17:56:59 View() called - cursor at: 0
+debug 2026/02/07 17:57:00 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:57:00 Window resized: 108x49
+debug 2026/02/07 17:57:00 View() called - cursor at: 0
+debug 2026/02/07 17:57:00 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:57:00 Window resized: 119x49
+debug 2026/02/07 17:57:00 View() called - cursor at: 0
+debug 2026/02/07 17:57:00 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:57:00 Window resized: 121x49
+debug 2026/02/07 17:57:00 View() called - cursor at: 0
+debug 2026/02/07 17:57:01 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:57:01 Window resized: 122x49
+debug 2026/02/07 17:57:01 View() called - cursor at: 0
+debug 2026/02/07 17:57:01 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:57:01 Window resized: 117x49
+debug 2026/02/07 17:57:01 View() called - cursor at: 0
+debug 2026/02/07 17:57:01 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:57:01 Window resized: 114x49
+debug 2026/02/07 17:57:01 View() called - cursor at: 0
+debug 2026/02/07 17:57:01 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:57:01 Window resized: 113x49
+debug 2026/02/07 17:57:01 View() called - cursor at: 0
+debug 2026/02/07 17:57:02 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:57:02 Window resized: 112x49
+debug 2026/02/07 17:57:02 View() called - cursor at: 0
+debug 2026/02/07 17:57:02 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:57:02 Window resized: 111x49
+debug 2026/02/07 17:57:02 View() called - cursor at: 0
+debug 2026/02/07 17:57:02 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/07 17:57:02 Window resized: 110x49
+debug 2026/02/07 17:57:02 View() called - cursor at: 0
+debug 2026/02/08 20:46:03 Update called with message type: tea.KeyMsg
+debug 2026/02/08 20:46:03 Key pressed: q
+debug 2026/02/08 20:46:03 View() called - cursor at: 0
+debug 2026/02/08 20:46:03 View() called - cursor at: 0
+debug 2026/02/08 20:49:27 View() called - cursor at: 0
+debug 2026/02/08 20:53:14 View() called - cursor at: 0
+debug 2026/02/08 20:53:14 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 20:53:14 Window resized: 110x49
+debug 2026/02/08 20:53:14 View() called - cursor at: 0
+debug 2026/02/08 20:53:16 Update called with message type: tea.KeyMsg
+debug 2026/02/08 20:53:16 Key pressed: down
+debug 2026/02/08 20:53:16 View() called - cursor at: 1
+debug 2026/02/08 20:53:16 Update called with message type: tea.KeyMsg
+debug 2026/02/08 20:53:16 Key pressed: up
+debug 2026/02/08 20:53:16 View() called - cursor at: 0
+debug 2026/02/08 20:53:18 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 20:53:18 Window resized: 109x49
+debug 2026/02/08 20:53:18 View() called - cursor at: 0
+debug 2026/02/08 20:53:18 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 20:53:18 Window resized: 91x49
+debug 2026/02/08 20:53:18 View() called - cursor at: 0
+debug 2026/02/08 20:53:19 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 20:53:19 Window resized: 84x49
+debug 2026/02/08 20:53:19 View() called - cursor at: 0
+debug 2026/02/08 20:53:19 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 20:53:19 Window resized: 78x49
+debug 2026/02/08 20:53:19 View() called - cursor at: 0
+debug 2026/02/08 20:53:19 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 20:53:19 Window resized: 72x49
+debug 2026/02/08 20:53:19 View() called - cursor at: 0
+debug 2026/02/08 20:53:19 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 20:53:19 Window resized: 71x49
+debug 2026/02/08 20:53:19 View() called - cursor at: 0
+debug 2026/02/08 20:53:21 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 20:53:21 Window resized: 70x49
+debug 2026/02/08 20:53:21 View() called - cursor at: 0
+debug 2026/02/08 20:53:21 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 20:53:21 Window resized: 54x49
+debug 2026/02/08 20:53:21 View() called - cursor at: 0
+debug 2026/02/08 20:53:23 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 20:53:23 Window resized: 55x49
+debug 2026/02/08 20:53:23 View() called - cursor at: 0
+debug 2026/02/08 20:53:24 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 20:53:24 Window resized: 81x49
+debug 2026/02/08 20:53:24 View() called - cursor at: 0
+debug 2026/02/08 20:53:43 Update called with message type: tea.KeyMsg
+debug 2026/02/08 20:53:43 Key pressed: down
+debug 2026/02/08 20:53:43 View() called - cursor at: 1
+debug 2026/02/08 20:53:43 Update called with message type: tea.KeyMsg
+debug 2026/02/08 20:53:43 Key pressed: up
+debug 2026/02/08 20:53:43 View() called - cursor at: 0
+debug 2026/02/08 20:53:44 Update called with message type: tea.KeyMsg
+debug 2026/02/08 20:53:44 Key pressed: down
+debug 2026/02/08 20:53:44 View() called - cursor at: 1
+debug 2026/02/08 20:53:45 Update called with message type: tea.KeyMsg
+debug 2026/02/08 20:53:45 Key pressed: up
+debug 2026/02/08 20:53:45 View() called - cursor at: 0
+debug 2026/02/08 20:53:45 Update called with message type: tea.KeyMsg
+debug 2026/02/08 20:53:45 Key pressed: down
+debug 2026/02/08 20:53:45 View() called - cursor at: 1
+debug 2026/02/08 20:53:46 Update called with message type: tea.KeyMsg
+debug 2026/02/08 20:53:46 Key pressed: up
+debug 2026/02/08 20:53:46 View() called - cursor at: 0
+debug 2026/02/08 20:54:50 Update called with message type: tea.KeyMsg
+debug 2026/02/08 20:54:50 Key pressed: q
+debug 2026/02/08 20:54:50 View() called - cursor at: 0
+debug 2026/02/08 20:54:50 View() called - cursor at: 0
+debug 2026/02/08 21:04:12 View() called - cursor at: 0
+debug 2026/02/08 21:04:12 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:04:12 Window resized: 81x49
+debug 2026/02/08 21:04:12 View() called - cursor at: 0
+debug 2026/02/08 21:04:14 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:04:14 Key pressed: down
+debug 2026/02/08 21:04:14 View() called - cursor at: 1
+debug 2026/02/08 21:04:15 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:04:15 Key pressed: up
+debug 2026/02/08 21:04:15 View() called - cursor at: 0
+debug 2026/02/08 21:04:17 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:04:17 Window resized: 80x49
+debug 2026/02/08 21:04:17 View() called - cursor at: 0
+debug 2026/02/08 21:04:17 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:04:17 Window resized: 76x49
+debug 2026/02/08 21:04:17 View() called - cursor at: 0
+debug 2026/02/08 21:04:17 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:04:17 Window resized: 67x49
+debug 2026/02/08 21:04:17 View() called - cursor at: 0
+debug 2026/02/08 21:04:18 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:04:18 Window resized: 66x49
+debug 2026/02/08 21:04:18 View() called - cursor at: 0
+debug 2026/02/08 21:04:18 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:04:18 Window resized: 62x49
+debug 2026/02/08 21:04:18 View() called - cursor at: 0
+debug 2026/02/08 21:04:19 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:04:19 Window resized: 61x49
+debug 2026/02/08 21:04:19 View() called - cursor at: 0
+debug 2026/02/08 21:04:19 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:04:19 Window resized: 57x49
+debug 2026/02/08 21:04:19 View() called - cursor at: 0
+debug 2026/02/08 21:04:20 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:04:20 Window resized: 58x49
+debug 2026/02/08 21:04:20 View() called - cursor at: 0
+debug 2026/02/08 21:04:20 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:04:20 Window resized: 82x49
+debug 2026/02/08 21:04:20 View() called - cursor at: 0
+debug 2026/02/08 21:05:04 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:04 Key pressed: down
+debug 2026/02/08 21:05:04 View() called - cursor at: 1
+debug 2026/02/08 21:05:05 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:05 Key pressed: up
+debug 2026/02/08 21:05:05 View() called - cursor at: 0
+debug 2026/02/08 21:05:05 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:05 Key pressed: down
+debug 2026/02/08 21:05:05 View() called - cursor at: 1
+debug 2026/02/08 21:05:07 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:07 Key pressed: up
+debug 2026/02/08 21:05:07 View() called - cursor at: 0
+debug 2026/02/08 21:05:07 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:07 Key pressed: down
+debug 2026/02/08 21:05:07 View() called - cursor at: 1
+debug 2026/02/08 21:05:07 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:07 Key pressed: up
+debug 2026/02/08 21:05:07 View() called - cursor at: 0
+debug 2026/02/08 21:05:08 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:08 Key pressed: down
+debug 2026/02/08 21:05:08 View() called - cursor at: 1
+debug 2026/02/08 21:05:08 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:08 Key pressed: down
+debug 2026/02/08 21:05:08 View() called - cursor at: 1
+debug 2026/02/08 21:05:09 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:09 Key pressed: down
+debug 2026/02/08 21:05:09 View() called - cursor at: 1
+debug 2026/02/08 21:05:09 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:09 Key pressed: down
+debug 2026/02/08 21:05:09 View() called - cursor at: 1
+debug 2026/02/08 21:05:09 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:09 Key pressed: down
+debug 2026/02/08 21:05:09 View() called - cursor at: 1
+debug 2026/02/08 21:05:09 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:09 Key pressed: down
+debug 2026/02/08 21:05:09 View() called - cursor at: 1
+debug 2026/02/08 21:05:10 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:10 Key pressed: down
+debug 2026/02/08 21:05:10 View() called - cursor at: 1
+debug 2026/02/08 21:05:10 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:10 Key pressed: down
+debug 2026/02/08 21:05:10 View() called - cursor at: 1
+debug 2026/02/08 21:05:10 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:10 Key pressed: down
+debug 2026/02/08 21:05:10 View() called - cursor at: 1
+debug 2026/02/08 21:05:10 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:10 Key pressed: down
+debug 2026/02/08 21:05:10 View() called - cursor at: 1
+debug 2026/02/08 21:05:11 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:11 Key pressed: down
+debug 2026/02/08 21:05:11 View() called - cursor at: 1
+debug 2026/02/08 21:05:11 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:11 Key pressed: down
+debug 2026/02/08 21:05:11 View() called - cursor at: 1
+debug 2026/02/08 21:05:11 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:11 Key pressed: down
+debug 2026/02/08 21:05:11 View() called - cursor at: 1
+debug 2026/02/08 21:05:11 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:11 Key pressed: down
+debug 2026/02/08 21:05:11 View() called - cursor at: 1
+debug 2026/02/08 21:05:12 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:12 Key pressed: up
+debug 2026/02/08 21:05:12 View() called - cursor at: 0
+debug 2026/02/08 21:05:12 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:12 Key pressed: down
+debug 2026/02/08 21:05:12 View() called - cursor at: 1
+debug 2026/02/08 21:05:14 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:05:14 Key pressed: up
+debug 2026/02/08 21:05:14 View() called - cursor at: 0
+debug 2026/02/08 21:07:25 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:07:25 Key pressed: q
+debug 2026/02/08 21:07:25 View() called - cursor at: 0
+debug 2026/02/08 21:07:25 View() called - cursor at: 0
+debug 2026/02/08 21:07:32 View() called - cursor at: 0
+debug 2026/02/08 21:07:32 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:07:32 Window resized: 82x49
+debug 2026/02/08 21:07:32 View() called - cursor at: 0
+debug 2026/02/08 21:07:47 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:07:47 Key pressed: q
+debug 2026/02/08 21:07:47 View() called - cursor at: 0
+debug 2026/02/08 21:07:47 View() called - cursor at: 0
+debug 2026/02/08 21:07:51 View() called - cursor at: 0
+debug 2026/02/08 21:07:51 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:07:51 Window resized: 82x49
+debug 2026/02/08 21:07:51 View() called - cursor at: 0
+debug 2026/02/08 21:07:53 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:07:53 Key pressed: q
+debug 2026/02/08 21:07:53 View() called - cursor at: 0
+debug 2026/02/08 21:07:53 View() called - cursor at: 0
+debug 2026/02/08 21:08:26 View() called - cursor at: 0
+debug 2026/02/08 21:08:26 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:08:26 Window resized: 82x49
+debug 2026/02/08 21:08:26 View() called - cursor at: 0
+debug 2026/02/08 21:09:14 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:09:14 Key pressed: q
+debug 2026/02/08 21:09:14 View() called - cursor at: 0
+debug 2026/02/08 21:09:14 View() called - cursor at: 0
+debug 2026/02/08 21:09:18 View() called - cursor at: 0
+debug 2026/02/08 21:09:18 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:09:18 Window resized: 82x49
+debug 2026/02/08 21:09:18 View() called - cursor at: 0
+debug 2026/02/08 21:09:21 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:09:21 Window resized: 81x49
+debug 2026/02/08 21:09:21 View() called - cursor at: 0
+debug 2026/02/08 21:09:21 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:09:21 Window resized: 75x49
+debug 2026/02/08 21:09:21 View() called - cursor at: 0
+debug 2026/02/08 21:09:22 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:09:22 Window resized: 68x49
+debug 2026/02/08 21:09:22 View() called - cursor at: 0
+debug 2026/02/08 21:09:22 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:09:22 Window resized: 64x49
+debug 2026/02/08 21:09:22 View() called - cursor at: 0
+debug 2026/02/08 21:09:22 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:09:22 Window resized: 62x49
+debug 2026/02/08 21:09:22 View() called - cursor at: 0
+debug 2026/02/08 21:09:22 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:09:22 Window resized: 61x49
+debug 2026/02/08 21:09:22 View() called - cursor at: 0
+debug 2026/02/08 21:09:23 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:09:23 Window resized: 67x49
+debug 2026/02/08 21:09:23 View() called - cursor at: 0
+debug 2026/02/08 21:09:23 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:09:23 Window resized: 78x49
+debug 2026/02/08 21:09:23 View() called - cursor at: 0
+debug 2026/02/08 21:09:23 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:09:23 Window resized: 84x49
+debug 2026/02/08 21:09:23 View() called - cursor at: 0
+debug 2026/02/08 21:09:31 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:09:31 Key pressed: q
+debug 2026/02/08 21:09:31 View() called - cursor at: 0
+debug 2026/02/08 21:09:31 View() called - cursor at: 0
+debug 2026/02/08 21:09:35 View() called - cursor at: 0
+debug 2026/02/08 21:09:35 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:09:35 Window resized: 84x49
+debug 2026/02/08 21:09:35 View() called - cursor at: 0
+debug 2026/02/08 21:16:15 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:16:15 Key pressed: q
+debug 2026/02/08 21:16:15 View() called - cursor at: 0
+debug 2026/02/08 21:16:15 View() called - cursor at: 0
+debug 2026/02/08 21:16:33 View() called - cursor at: 0
+debug 2026/02/08 21:16:33 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 21:16:33 Window resized: 84x49
+debug 2026/02/08 21:16:33 View() called - cursor at: 0
+debug 2026/02/08 21:16:34 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:16:34 Key pressed: down
+debug 2026/02/08 21:16:34 View() called - cursor at: 1
+debug 2026/02/08 21:16:34 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:16:34 Key pressed: up
+debug 2026/02/08 21:16:34 View() called - cursor at: 0
+debug 2026/02/08 21:16:35 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:16:35 Key pressed: down
+debug 2026/02/08 21:16:35 View() called - cursor at: 1
+debug 2026/02/08 21:16:35 Update called with message type: tea.KeyMsg
+debug 2026/02/08 21:16:35 Key pressed: q
+debug 2026/02/08 21:16:35 View() called - cursor at: 1
+debug 2026/02/08 21:16:35 View() called - cursor at: 1
+debug 2026/02/08 22:33:19 View() called - cursor at: 0
+debug 2026/02/08 22:33:19 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:33:19 Window resized: 84x49
+debug 2026/02/08 22:33:19 View() called - cursor at: 0
+debug 2026/02/08 22:33:20 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:33:20 Key pressed: down
+debug 2026/02/08 22:33:20 View() called - cursor at: 0
+debug 2026/02/08 22:33:21 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:33:21 Key pressed: down
+debug 2026/02/08 22:33:21 View() called - cursor at: 0
+debug 2026/02/08 22:33:22 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:33:22 Key pressed: down
+debug 2026/02/08 22:33:22 View() called - cursor at: 0
+debug 2026/02/08 22:33:22 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:33:22 Key pressed: up
+debug 2026/02/08 22:33:22 View() called - cursor at: 0
+debug 2026/02/08 22:33:22 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:33:22 Key pressed: up
+debug 2026/02/08 22:33:22 View() called - cursor at: 0
+debug 2026/02/08 22:33:24 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:33:24 Key pressed: :
+debug 2026/02/08 22:33:24 View() called - cursor at: 0
+debug 2026/02/08 22:33:25 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:33:25 Key pressed: q
+debug 2026/02/08 22:33:25 View() called - cursor at: 0
+debug 2026/02/08 22:33:25 View() called - cursor at: 0
+debug 2026/02/08 22:34:01 View() called - cursor at: 0
+debug 2026/02/08 22:34:01 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:34:01 Window resized: 84x49
+debug 2026/02/08 22:34:01 View() called - cursor at: 0
+debug 2026/02/08 22:34:02 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:34:02 Key pressed: down
+debug 2026/02/08 22:34:02 View() called - cursor at: 1
+debug 2026/02/08 22:34:03 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:34:03 Key pressed: up
+debug 2026/02/08 22:34:03 View() called - cursor at: 0
+debug 2026/02/08 22:34:04 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:34:04 Key pressed: a
+debug 2026/02/08 22:34:04 View() called - cursor at: 0
+debug 2026/02/08 22:34:04 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:34:04 Key pressed: a
+debug 2026/02/08 22:34:04 View() called - cursor at: 0
+debug 2026/02/08 22:34:05 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:34:05 Key pressed: q
+debug 2026/02/08 22:34:05 View() called - cursor at: 0
+debug 2026/02/08 22:34:05 View() called - cursor at: 0
+debug 2026/02/08 22:48:06 View() called
+debug 2026/02/08 22:48:06 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:48:06 Window resized: 84x49
+debug 2026/02/08 22:48:06 View() called
+debug 2026/02/08 22:48:07 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:48:07 Key pressed: down
+debug 2026/02/08 22:48:07 View() called
+debug 2026/02/08 22:48:07 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:48:07 Key pressed: up
+debug 2026/02/08 22:48:07 View() called
+debug 2026/02/08 22:48:08 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:48:08 Key pressed: q
+debug 2026/02/08 22:48:08 View() called
+debug 2026/02/08 22:48:08 View() called
+debug 2026/02/08 22:50:39 View() called
+debug 2026/02/08 22:50:39 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:39 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:39 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:50:39 Window resized: 84x49
+debug 2026/02/08 22:50:39 View() called
+debug 2026/02/08 22:50:39 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:39 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:40 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:40 Key pressed: down
+debug 2026/02/08 22:50:40 View() called
+debug 2026/02/08 22:50:40 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:40 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:40 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:40 Key pressed: down
+debug 2026/02/08 22:50:40 View() called
+debug 2026/02/08 22:50:40 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:40 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:40 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:40 Key pressed: down
+debug 2026/02/08 22:50:40 View() called
+debug 2026/02/08 22:50:40 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:40 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:41 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:41 Key pressed: down
+debug 2026/02/08 22:50:41 View() called
+debug 2026/02/08 22:50:41 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:41 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:41 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:41 Key pressed: down
+debug 2026/02/08 22:50:41 View() called
+debug 2026/02/08 22:50:41 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:41 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:41 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:41 Key pressed: down
+debug 2026/02/08 22:50:41 View() called
+debug 2026/02/08 22:50:41 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:41 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:41 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:41 Key pressed: up
+debug 2026/02/08 22:50:41 View() called
+debug 2026/02/08 22:50:41 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:41 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:42 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:42 Key pressed: up
+debug 2026/02/08 22:50:42 View() called
+debug 2026/02/08 22:50:42 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:42 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:42 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:42 Key pressed: down
+debug 2026/02/08 22:50:42 View() called
+debug 2026/02/08 22:50:42 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:42 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:42 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:42 Key pressed: down
+debug 2026/02/08 22:50:42 View() called
+debug 2026/02/08 22:50:42 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:42 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:42 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:42 Key pressed: down
+debug 2026/02/08 22:50:42 View() called
+debug 2026/02/08 22:50:42 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:42 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:43 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:43 Key pressed: up
+debug 2026/02/08 22:50:43 View() called
+debug 2026/02/08 22:50:43 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:43 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:43 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:43 Key pressed: up
+debug 2026/02/08 22:50:43 View() called
+debug 2026/02/08 22:50:43 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:43 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:43 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:43 Key pressed: q
+debug 2026/02/08 22:50:43 View() called
+debug 2026/02/08 22:50:43 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:43 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:43 View() called
+debug 2026/02/08 22:50:43 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:43 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:58 View() called
+debug 2026/02/08 22:50:58 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:58 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:58 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:50:58 Window resized: 84x49
+debug 2026/02/08 22:50:58 View() called
+debug 2026/02/08 22:50:58 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:58 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:59 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:59 Key pressed: j
+debug 2026/02/08 22:50:59 View() called
+debug 2026/02/08 22:50:59 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:59 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:59 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:59 Key pressed: k
+debug 2026/02/08 22:50:59 View() called
+debug 2026/02/08 22:50:59 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:59 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:50:59 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:59 Key pressed: j
+debug 2026/02/08 22:50:59 View() called
+debug 2026/02/08 22:50:59 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:50:59 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:50:59 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:50:59 Key pressed: k
+debug 2026/02/08 22:50:59 View() called
+debug 2026/02/08 22:50:59 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:50:59 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:51:00 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:51:00 Key pressed: j
+debug 2026/02/08 22:51:00 View() called
+debug 2026/02/08 22:51:00 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:51:00 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:51:01 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:51:01 Key pressed: q
+debug 2026/02/08 22:51:01 View() called
+debug 2026/02/08 22:51:01 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:51:01 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:51:01 View() called
+debug 2026/02/08 22:51:01 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:51:01 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:53:11 View() called
+debug 2026/02/08 22:53:11 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:11 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:11 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:53:11 Window resized: 84x49
+debug 2026/02/08 22:53:11 View() called
+debug 2026/02/08 22:53:11 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:11 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:14 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:14 Key pressed: a
+debug 2026/02/08 22:53:14 View() called
+debug 2026/02/08 22:53:14 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:14 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:16 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:16 Key pressed: y
+debug 2026/02/08 22:53:16 View() called
+debug 2026/02/08 22:53:16 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:16 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:16 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:16 Key pressed: e
+debug 2026/02/08 22:53:16 View() called
+debug 2026/02/08 22:53:16 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:16 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:16 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:16 Key pressed: t
+debug 2026/02/08 22:53:16 View() called
+debug 2026/02/08 22:53:16 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:16 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:17 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:17 Key pressed: esc
+debug 2026/02/08 22:53:17 View() called
+debug 2026/02/08 22:53:17 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:17 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:17 View() called
+debug 2026/02/08 22:53:17 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:17 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:45 View() called
+debug 2026/02/08 22:53:45 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:45 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:45 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:53:45 Window resized: 84x49
+debug 2026/02/08 22:53:45 View() called
+debug 2026/02/08 22:53:45 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:45 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:47 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:47 Key pressed: /
+debug 2026/02/08 22:53:47 View() called
+debug 2026/02/08 22:53:47 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:47 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:47 Update called with message type: cursor.initialBlinkMsg
+debug 2026/02/08 22:53:47 View() called
+debug 2026/02/08 22:53:47 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:47 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:48 Update called with message type: cursor.BlinkMsg
+debug 2026/02/08 22:53:48 View() called
+debug 2026/02/08 22:53:48 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:48 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:48 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:48 Key pressed: a
+debug 2026/02/08 22:53:48 View() called
+debug 2026/02/08 22:53:48 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:48 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:48 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:48 View() called
+debug 2026/02/08 22:53:48 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:48 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:48 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:48 View() called
+debug 2026/02/08 22:53:48 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:48 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:48 Key pressed: n
+debug 2026/02/08 22:53:48 View() called
+debug 2026/02/08 22:53:48 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:48 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:48 View() called
+debug 2026/02/08 22:53:48 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:48 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:48 View() called
+debug 2026/02/08 22:53:48 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:49 Key pressed: t
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:49 Key pressed: backspace
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:49 Key pressed: o
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:49 Key pressed: t
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:49 Key pressed: h
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:49 Key pressed: e
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:49 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:49 View() called
+debug 2026/02/08 22:53:49 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:50 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:50 Key pressed: r
+debug 2026/02/08 22:53:50 View() called
+debug 2026/02/08 22:53:50 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:50 Update called with message type: cursor.blinkCanceled
+debug 2026/02/08 22:53:50 View() called
+debug 2026/02/08 22:53:50 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:50 Update called with message type: list.FilterMatchesMsg
+debug 2026/02/08 22:53:50 View() called
+debug 2026/02/08 22:53:50 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:50 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:50 Key pressed: esc
+debug 2026/02/08 22:53:50 View() called
+debug 2026/02/08 22:53:50 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:50 View() called
+debug 2026/02/08 22:53:50 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:52 View() called
+debug 2026/02/08 22:53:52 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:52 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:52 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:53:52 Window resized: 84x49
+debug 2026/02/08 22:53:52 View() called
+debug 2026/02/08 22:53:52 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:52 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:55 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:55 Key pressed: ?
+debug 2026/02/08 22:53:55 View() called
+debug 2026/02/08 22:53:55 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:55 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:57 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:53:57 Key pressed: q
+debug 2026/02/08 22:53:57 View() called
+debug 2026/02/08 22:53:57 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:57 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:53:57 View() called
+debug 2026/02/08 22:53:57 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:53:57 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:54:03 View() called
+debug 2026/02/08 22:54:03 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:54:03 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:54:03 Update called with message type: tea.WindowSizeMsg
+debug 2026/02/08 22:54:03 Window resized: 84x49
+debug 2026/02/08 22:54:03 View() called
+debug 2026/02/08 22:54:03 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:54:03 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:54:04 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:54:04 Key pressed: down
+debug 2026/02/08 22:54:04 View() called
+debug 2026/02/08 22:54:04 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:54:04 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:54:04 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:54:04 Key pressed: up
+debug 2026/02/08 22:54:04 View() called
+debug 2026/02/08 22:54:04 Delegate rendering commit 0: test(2): yet another commit (selected: true)
+debug 2026/02/08 22:54:04 Delegate rendering commit 1: test(1): some commit (selected: false)
+debug 2026/02/08 22:54:05 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:54:05 Key pressed: down
+debug 2026/02/08 22:54:05 View() called
+debug 2026/02/08 22:54:05 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:54:05 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:54:18 Update called with message type: tea.KeyMsg
+debug 2026/02/08 22:54:18 Key pressed: q
+debug 2026/02/08 22:54:18 View() called
+debug 2026/02/08 22:54:18 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:54:18 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/02/08 22:54:18 View() called
+debug 2026/02/08 22:54:18 Delegate rendering commit 0: test(2): yet another commit (selected: false)
+debug 2026/02/08 22:54:18 Delegate rendering commit 1: test(1): some commit (selected: true)
