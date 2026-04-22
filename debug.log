@@ -777,3 +777,4 @@ debug 2026/02/08 22:54:18 Delegate rendering commit 1: test(1): some commit (sel
 debug 2026/02/08 22:54:18 View() called
 debug 2026/02/08 22:54:18 Delegate rendering commit 0: test(2): yet another commit (selected: false)
 debug 2026/02/08 22:54:18 Delegate rendering commit 1: test(1): some commit (selected: true)
+debug 2026/04/21 22:47:42 debug mode enabled
