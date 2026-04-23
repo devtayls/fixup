@@ -7,9 +7,9 @@ import (
 // TestCommitFilterValue tests the FilterValue method
 func TestCommitFilterValue(t *testing.T) {
 	tests := []struct {
-		name    string
-		commit  Commit
-		want    string
+		name   string
+		commit Commit
+		want   string
 	}{
 		{
 			name: "normal commit",

@@ -86,3 +86,14 @@ func createFixupCommit(hash string) error {
 	}
 	return nil
 }
+
+func hasStagedChanges() (bool, error) {
+	cmd := exec.Command("git", "diff", "--cached", "--name-only")
+	output, err := cmd.Output()
+	if err != nil {
+		return false, fmt.Errorf("failed to find diffed files: %w", err)
+	}
+
+	changes := len(strings.TrimSpace(string(output))) > 0
+	return changes, nil
+}

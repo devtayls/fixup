@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"io"
 	"log"
@@ -10,19 +11,22 @@ import (
 )
 
 func main() {
-	// Get commits from current branch
-	// Enable debug by passing "DEBUG" statement
-	if len(os.Getenv("DEBUG")) > 0 {
-		f, err := tea.LogToFile("debug.log", "debug")
-		if err != nil {
-			fmt.Println("fatal:", err)
-			os.Exit(1)
-		}
-		defer f.Close()
-	} else {
-		log.SetOutput(io.Discard)
-	}
+	// flags
+	debug := flag.Bool("debug", false, "enable debug logs")
+	// todo: do I need a description here?
+	// todo: adding a comment
+	flag.BoolVar(debug, "d", false, "enable debug logs (shorthand)")
 
+	inline := flag.Bool("inline", false, "use inline mode instead of fullscreen")
+	// todo: do I need a description here?
+	flag.BoolVar(inline, "i", false, "use inline mode (shorthand)")
+
+	flag.Parse()
+
+	cleanup := setupDebug(*debug)
+	defer cleanup()
+
+	// Get commits
 	commits, err := getCommits()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error fetching commits: %v\n", err)
@@ -34,12 +38,24 @@ func main() {
 		os.Exit(0)
 	}
 
+	staged, err := hasStagedChanges()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error checking working tree: %v\n", err)
+		os.Exit(1)
+	}
+
+	if !staged {
+		fmt.Println("No staged changes. Stage your changes with 'git add' first.")
+		os.Exit(0)
+	}
+
 	// Initialize the TUI model
 	m := initialModel(commits)
 
+	program := getProgram(*inline, m)
+
 	// Run the program
-	p := tea.NewProgram(m, tea.WithAltScreen())
-	finalModel, err := p.Run()
+	finalModel, err := program.Run()
 
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error running program: %v\n", err)
@@ -58,5 +74,35 @@ func main() {
 			fmt.Println("Run 'git log --oneline' to see your commits.")
 			fmt.Println("Run 'git rebase -i --autosquash <base>' to squash fixups.")
 		}
+	}
+}
+
+func setupDebug(debug bool) func() {
+	if debug {
+		f, err := tea.LogToFile("debug.log", "debug")
+		if err != nil {
+			fmt.Println("fatal: ", err)
+			os.Exit(1)
+		}
+		log.Println("debug mode enabled")
+
+		return func() {
+			f.Close()
+		}
+
+	} else {
+		log.SetOutput(io.Discard)
+		return func() {}
+	}
+
+}
+
+func getProgram(inline bool, m model) *tea.Program {
+	if inline {
+		log.Println("Starting in inline mode")
+		return tea.NewProgram(m)
+	} else {
+		log.Println("Starting in fullscreen mode")
+		return tea.NewProgram(m, tea.WithAltScreen())
 	}
 }
