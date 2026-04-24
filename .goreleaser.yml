@@ -51,6 +51,11 @@ archives:
 checksum:
   name_template: "checksums.txt"
 
+# When Release Please has already created the GitHub Release with notes,
+# append our artifacts to it instead of trying to create a new one.
+release:
+  mode: append
+
 changelog:
   sort: asc
   filters:
