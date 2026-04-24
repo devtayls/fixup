@@ -1,4 +1,6 @@
 # Binary
 fixup
 
-ai/*
+dist/
+
+ai/

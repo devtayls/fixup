@@ -1,4 +1,4 @@
-module github.com/taylorpine/fixup
+module github.com/devtayls/fixup
 
 go 1.25.6
 

@@ -1,0 +1,76 @@
+# GoReleaser configuration for fixup
+# Documentation: https://goreleaser.com
+
+project_name: fixup
+version: 2
+
+builds:
+  - main: ./main.go
+    binary: fixup
+
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
+
+    # Skip Windows ARM64 (uncommon)
+    ignore:
+      - goos: windows
+        goarch: arm64
+
+    ldflags:
+      - -s -w
+      - -X main.version={{.Version}}
+      - -X main.commit={{.Commit}}
+      - -X main.date={{.Date}}
+
+    env:
+      - CGO_ENABLED=0
+
+archives:
+  - formats: [tar.gz]
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_
+      {{- .Os }}_
+      {{- .Arch }}
+
+    # Use zip for Windows
+    format_overrides:
+      - goos: windows
+        formats: [zip]
+
+    files:
+      - README*
+      - LICENSE*
+      - CHANGELOG*
+
+checksum:
+  name_template: "checksums.txt"
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^test:"
+      - "^chore:"
+
+brews:
+  - repository:
+      owner: devtayls
+      name: homebrew-fixup
+
+    name: fixup
+    homepage: https://github.com/devtayls/fixup
+    description: "Interactive git --fixup commit helper"
+    license: "MIT"
+
+    install: |
+      bin.install "fixup"
+
+    test: |
+      system "#{bin}/fixup", "--version"

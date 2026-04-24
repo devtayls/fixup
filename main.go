@@ -10,18 +10,29 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 )
 
+var (
+	version = "dev"
+	commit  = "none"
+	date    = "unknown"
+)
+
 func main() {
 	// flags
 	debug := flag.Bool("debug", false, "enable debug logs")
-	// todo: do I need a description here?
-	// todo: adding a comment
 	flag.BoolVar(debug, "d", false, "enable debug logs (shorthand)")
 
 	inline := flag.Bool("inline", false, "use inline mode instead of fullscreen")
-	// todo: do I need a description here?
 	flag.BoolVar(inline, "i", false, "use inline mode (shorthand)")
 
+	showVersion := flag.Bool("version", false, "version information")
+	flag.BoolVar(showVersion, "v", false, "version information (shorthand)")
+
 	flag.Parse()
+
+	if *showVersion {
+		fmt.Printf("fixup %s (commit %s, built %s)\n", version, commit, date)
+		os.Exit(0)
+	}
 
 	cleanup := setupDebug(*debug)
 	defer cleanup()
