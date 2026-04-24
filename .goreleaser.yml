@@ -59,18 +59,22 @@ changelog:
       - "^test:"
       - "^chore:"
 
-brews:
-  - repository:
+homebrew_casks:
+  - name: fixup
+    repository:
       owner: devtayls
       name: homebrew-fixup
 
-    name: fixup
+    binaries:
+      - fixup
+
     homepage: https://github.com/devtayls/fixup
     description: "Interactive git --fixup commit helper"
-    license: "MIT"
 
-    install: |
-      bin.install "fixup"
-
-    test: |
-      system "#{bin}/fixup", "--version"
+    # Strip macOS Gatekeeper quarantine on install (binary is unsigned)
+    hooks:
+      post:
+        install: |
+          if OS.mac?
+            system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/fixup"]
+          end
