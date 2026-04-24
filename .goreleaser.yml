@@ -5,7 +5,7 @@ project_name: fixup
 version: 2
 
 builds:
-  - main: ./main.go
+  - main: ./
     binary: fixup
 
     goos:
