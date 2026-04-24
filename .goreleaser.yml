@@ -64,6 +64,7 @@ homebrew_casks:
     repository:
       owner: devtayls
       name: homebrew-fixup
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
 
     binaries:
       - fixup
