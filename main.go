@@ -21,8 +21,8 @@ func main() {
 	debug := flag.Bool("debug", false, "enable debug logs")
 	flag.BoolVar(debug, "d", false, "enable debug logs (shorthand)")
 
-	inline := flag.Bool("inline", false, "use inline mode instead of fullscreen")
-	flag.BoolVar(inline, "i", false, "use inline mode (shorthand)")
+	inline := flag.Bool("inline", true, "use inline mode instead of fullscreen")
+	flag.BoolVar(inline, "i", true, "use inline mode (shorthand)")
 
 	showVersion := flag.Bool("version", false, "version information")
 	flag.BoolVar(showVersion, "v", false, "version information (shorthand)")
@@ -37,6 +37,18 @@ func main() {
 	cleanup := setupDebug(*debug)
 	defer cleanup()
 
+	// Check for staged files
+	staged, err := hasStagedChanges()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error checking working tree: %v\n", err)
+		os.Exit(1)
+	}
+
+	if !staged {
+		fmt.Println("No staged changes. Stage your changes with 'git add' first.")
+		os.Exit(0)
+	}
+
 	// Get commits
 	commits, err := getCommits()
 	if err != nil {
@@ -49,19 +61,13 @@ func main() {
 		os.Exit(0)
 	}
 
-	staged, err := hasStagedChanges()
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error checking working tree: %v\n", err)
-		os.Exit(1)
-	}
-
-	if !staged {
-		fmt.Println("No staged changes. Stage your changes with 'git add' first.")
-		os.Exit(0)
-	}
-
 	// Initialize the TUI model
-	m := initialModel(commits)
+	opts := Options{}
+	if *inline {
+		opts.MaxHeight = 4
+	}
+
+	m := initialModel(commits, opts)
 
 	program := getProgram(*inline, m)
 

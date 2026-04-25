@@ -13,11 +13,12 @@ import (
 )
 
 const (
-	hashLength   = 7
-	prefixWidth  = 2 // "> " or "  "
-	hashSpacing  = 1 // space after hash
-	leftMargin   = prefixWidth + hashLength + hashSpacing
-	indentSpaces = "          "
+	hashLength    = 7
+	prefixWidth   = 2 // "> " or "  "
+	hashSpacing   = 1 // space after hash
+	leftMargin    = prefixWidth + hashLength + hashSpacing
+	bottomPadding = 4 // empty rows below the list, before the terminal edge
+	indentSpaces  = "          "
 )
 
 // Styles
@@ -64,14 +65,18 @@ var keys = keyMap{
 	),
 }
 
+type Options struct {
+	MaxHeight int // 0 for full-screen
+}
+
 type model struct {
 	list     list.Model
 	selected bool
+	opts     Options
 	err      error
 }
 
-// initialModel creates the initial model with commits
-func initialModel(commits []Commit) model {
+func initialModel(commits []Commit, opts Options) model {
 	// Convert []Commit to []list.Item
 	items := make([]list.Item, len(commits))
 	for i, commit := range commits {
@@ -90,6 +95,7 @@ func initialModel(commits []Commit) model {
 
 	return model{
 		list: l,
+		opts: opts,
 	}
 }
 
@@ -103,10 +109,19 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	log.Printf("Update called with message type: %T", msg)
 
 	switch msg := msg.(type) {
-	// Update window width
+
+	// update window size
 	case tea.WindowSizeMsg:
-		m.list.SetSize(msg.Width, msg.Height-4) // for margins
-		log.Printf("Window resized: %dx%d", msg.Width, msg.Height)
+
+		// set height
+		height := msg.Height - bottomPadding
+		if m.opts.MaxHeight > 0 && height > m.opts.MaxHeight {
+			height = m.opts.MaxHeight
+		}
+
+		m.list.SetSize(msg.Width, height)
+
+		log.Printf("Window resized: %dx%d", msg.Width, height)
 
 	// Update key press
 	case tea.KeyMsg:
